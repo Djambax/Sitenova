@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nova Impéria</title>
+    <meta name="description" content="Contactez Nova Impéria pour un accompagnement personnalisé. Formulaire de contact et coordonnées.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo-nova-imperia.png">
+    <link rel="apple-touch-icon" href="assets/logo-nova-imperia.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo-nova-imperia.png" alt="Nova Impéria" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+                <li><a href="formations.html" class="nav-link">Formations</a></li>
+                <li><a href="prestations.html" class="nav-link">Prestations</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Formulaire + Infos -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nous contacter</h2>
+                <p>Formulaire ci‑dessous ou contact direct par email et téléphone.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    
+                    
+                    <form action="https://formsubmit.co/contact@nova-imperia.fr" method="POST">
+                        <!-- Formsubmit settings -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <!-- Champs utilisateur -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom complet *</label>
+                                <input type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" id="telephone" name="telephone">
+                            </div>
+                            <div class="form-group">
+                                <label for="entreprise">Entreprise</label>
+                                <input type="text" id="entreprise" name="entreprise">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sujet">Sujet *</label>
+                            <select id="sujet" name="sujet" required>
+                                <option value="">Choisissez un sujet</option>
+                                <option value="formation">Formation</option>
+                                <option value="prestation">Prestation</option>
+                                <option value="devis">Demande de devis</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                        </div>
+
+                        <!-- Bouton -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <aside class="contact-aside">
+                    <div class="contact-visual">
+                        <img src="assets/femme-ecriture.jpg" alt="Équipe Nova Impéria">
+                    </div>
+                    <div class="contact-card">
+                        <h2>Nos coordonnées</h2>
+                        <ul class="contact-rows">
+                            <li class="contact-row">
+                                <span class="cr-icon"><i class="fas fa-envelope"></i></span>
+                                <div class="cr-content">
+                                    <span class="cr-label">Email</span>
+                                    <a href="mailto:contact@nova-imperia.fr" class="cr-value">contact@nova-imperia.fr</a>
+                                </div>
+                            </li>
+                            <li class="contact-row">
+                                <span class="cr-icon"><i class="fas fa-phone"></i></span>
+                                <div class="cr-content">
+                                    <span class="cr-label">Téléphone</span>
+                                    <a href="tel:+33100000000" class="cr-value">+33 1 XX XX XX XX</a>
+                                </div>
+                            </li>
+                            <li class="contact-row">
+                                <span class="cr-icon"><i class="fas fa-clock"></i></span>
+                                <div class="cr-content">
+                                    <span class="cr-label">Horaires</span>
+                                    <span class="cr-value">Lun–Ven: 9h–18h · Sam: 9h–12h</span>
+                                </div>
+                            </li>
+                            <li class="contact-row">
+                                <span class="cr-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div class="cr-content">
+                                    <span class="cr-label">Adresse</span>
+                                    <span class="cr-value">123 Av. de l'Excellence, 75001 Paris</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer (clair) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo-nova-imperia.png" alt="Nova Impéria" class="footer-logo">
+                    <p>Organisme de formation premium. Accompagnement sur‑mesure et résultats concrets.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="prestations.html">Prestations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Formations</h4>
+                    <ul>
+                        <li><a href="formations.html#business">Business & Entrepreneuriat</a></li>
+                        <li><a href="formations.html#marketing">Marketing & Communication</a></li>
+                        <li><a href="formations.html#vente">Vente & Animation commerciale</a></li>
+                        <li><a href="formations.html#gestion">Gestion d'entreprise</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Prestations</h4>
+                    <ul>
+                        <li><a href="prestations.html#pack1">Lancement & Administration</a></li>
+                        <li><a href="prestations.html#pack2">Communication</a></li>
+                        <li><a href="prestations.html#pack3">Pack Complet</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos conseils et actualités. Pas de spam.</p>
+                    <form class="footer-form" action="#" method="post" onsubmit="return false;">
+                        <input type="email" class="footer-input" placeholder="Votre email" required>
+                        <button type="submit" class="btn btn-primary footer-submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="bottom-left">&copy; 2024 Nova Impéria. Tous droits réservés.</div>
+                <div class="bottom-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -201,20 +201,20 @@
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <div class="cf-group">
-            <label class="cf-label">① Quel est votre profil ?</label>
+            <label class="cf-label"><span class="step-badge"><i class="fas fa-user-gear"></i></span> Quel est votre profil ?</label>
             <div class="cf-row">
               <label class="radio active"><input type="radio" name="profil" value="of" checked> <i class="fas fa-graduation-cap icon"></i> Organisme de formation</label>
               <label class="radio"><input type="radio" name="profil" value="ent"> <i class="fas fa-building icon"></i> Entreprise</label>
             </div>
           </div>
           <div id="cf-of" class="cf-conditional">
-            <label class="cf-label">② Votre situation</label>
+            <label class="cf-label"><span class="step-badge"><i class="fas fa-route"></i></span> Votre situation</label>
             <div class="cf-row">
               <label class="radio active"><input type="radio" name="situation" value="creation" checked> <i class="fas fa-rocket icon"></i> Création d’un OF</label>
               <label class="radio"><input type="radio" name="situation" value="sans-edof"> <i class="fas fa-circle-xmark icon"></i> OF existant sans EDOF</label>
               <label class="radio"><input type="radio" name="situation" value="avec-edof"> <i class="fas fa-circle-check icon"></i> OF existant avec EDOF</label>
             </div>
-            <label class="cf-label">③ Vos besoins (choix multiples)</label>
+            <label class="cf-label"><span class="step-badge"><i class="fas fa-list-check"></i></span> Vos besoins (choix multiples)</label>
             <div class="cf-tags">
               <label class="check"><input type="checkbox" name="besoins[]" value="NDA"> <i class="fas fa-file-shield icon"></i> NDA</label>
               <label class="check"><input type="checkbox" name="besoins[]" value="Qualiopi"> <i class="fas fa-award icon"></i> Qualiopi</label>
@@ -230,7 +230,7 @@
             <input type="text" class="cf-input cf-other" name="besoin_autre" placeholder="Précisez votre autre besoin (optionnel)">
           </div>
           <div id="cf-ent" class="cf-conditional" hidden>
-            <label class="cf-label">② Vos besoins (choix multiples)</label>
+            <label class="cf-label"><span class="step-badge"><i class="fas fa-list-check"></i></span> Vos besoins (choix multiples)</label>
             <div class="cf-tags">
               <label class="check"><input type="checkbox" name="besoins[]" value="Site"> <i class="fas fa-globe icon"></i> Site internet</label>
               <label class="check"><input type="checkbox" name="besoins[]" value="Reseaux"> <i class="fas fa-share-nodes icon"></i> Réseaux sociaux + templates</label>
@@ -241,7 +241,7 @@
             <input type="text" class="cf-input cf-other" name="besoin_autre" placeholder="Précisez votre autre besoin (optionnel)">
           </div>
           <div class="cf-group">
-            <label class="cf-label">④ Coordonnées</label>
+            <label class="cf-label"><span class="step-badge"><i class="fas fa-id-card"></i></span> Coordonnées</label>
             <div class="cf-grid">
               <input type="text" class="cf-input" name="nom" placeholder="Nom / Prénom" required>
               <input type="email" class="cf-input" name="email" placeholder="Email" required>
